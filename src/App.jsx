@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 import translations from './translations'
 
@@ -490,6 +491,7 @@ function App() {
       <footer>
         <p>© {new Date().getFullYear()} Brais Busque</p>
       </footer>
+      <Analytics />
     </div>
   )
 }
